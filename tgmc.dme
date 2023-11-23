@@ -1935,4 +1935,6 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "modular_RUtgmc\includes.dm"
+#include "modular_RUtgmc\code\modules\clothing\head\misc.dm"
+#include "modular_RUtgmc\code\modules\clothing\modular_armor\style_line.dm"
 // END_INCLUDE
