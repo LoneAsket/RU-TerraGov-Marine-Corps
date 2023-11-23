@@ -266,3 +266,39 @@
 	item_icons = list(
 		slot_head_str = 'icons/mob/clothing/headwear/marine_hats.dmi',)
 	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/headband
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/headband/red
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/headband/rambo
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/headband/snake
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/tan
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/red
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/red2
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/blueberet
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/darkgreen
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/green
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet/snow
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmcberet
+	species_exception = list(/datum/species/robot)
