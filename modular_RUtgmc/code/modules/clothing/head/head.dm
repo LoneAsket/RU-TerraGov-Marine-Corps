@@ -223,3 +223,8 @@
 
 /obj/item/clothing/head/highcap/captain/black
 	icon_state = "captain_alt_black"
+
+/obj/item/clothing/head/slouch
+	icon_state = "slouch_hat"
+	item_icons = list(
+		slot_head_str = 'icons/mob/clothing/headwear/marine_hats.dmi',)
