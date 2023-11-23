@@ -13,21 +13,20 @@
 /obj/item/clothing/head/squadhb/b
 	name = "\improper Bravo squad headband"
 	icon_state = "bsquadhb"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/squadhb/c
 	name = "\improper Charlie squad headband"
 	icon_state = "csquadhb"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/squadhb/d
 	name = "\improper Delta squad headband"
 	icon_state = "dsquadhb"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/squadhb/fl
 	name = "\improper Foreign Legion headband"
 	icon_state = "flsquadhb"
+
+/obj/item/clothing/head/tgmcberet
 	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad
@@ -37,31 +36,26 @@
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/delta
 	name = "\improper Delta Squad beret"
 	desc = "Military beret with TGMC marine squad insignia. This one belongs to the Delta Squad."
 	icon_state = "dsberet"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/alpha
 	name = "\improper Alpha Squad beret"
 	desc = "Military beret with TGMC marine squad insignia. This one belongs to the Alpha Squad."
 	icon_state = "asberet"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/bravo
 	name = "\improper Bravo Squad beret"
 	desc = "Military beret with TGMC marine squad insignia. This one belongs to the Bravo Squad."
 	icon_state = "bsberet"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/foreign
 	name = "\improper Foreign Legion beret"
 	desc = "Military beret with TGMC marine squad insignia. This one belongs to the Foreign Legion."
 	icon_state = "flsberet"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/commando
 	name = "\improper Marines Commando beret"
@@ -70,7 +64,6 @@
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/vdv
 	name = "\improper Airborne beret"
@@ -79,7 +72,6 @@
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/medical
 	name = "\improper Medical beret"
@@ -88,7 +80,6 @@
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab
 	name = "\improper Black hijab"
@@ -98,53 +89,43 @@
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
 	icon_state = "hijab_black"
 	flags_inv_hide = HIDEEARS|HIDETOPHAIR
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/grey
 	name = "\improper Grey hijab"
 	icon_state = "hijab_grey"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/red
 	name = "\improper Red hijab"
 	icon_state = "hijab_red"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/blue
 	name = "\improper Blue hijab"
 	icon_state = "hijab_blue"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/brown
 	name = "\improper Brown hijab"
 	icon_state = "hijab_brown"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/white
 	name = "\improper White hijab"
 	icon_state = "hijab_white"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/turban
 	name = "\improper White turban"
 	desc = "A sturdy cloth, worn around the head."
 	icon_state = "turban_black"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/turban/white
 	name = "\improper White turban"
 	icon_state = "turban_white"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/turban/red
 	name = "\improper Red turban"
 	icon_state = "turban_red"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/hijab/turban/blue
 	name = "\improper Blue turban"
 	icon_state = "turban_blue"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/hachimaki
 	name = "\improper Ancient pilot headband and scarf kit"
@@ -179,60 +160,49 @@
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/black/bravo
 	name = "\improper Bravo squad black beret"
 	icon_state = "bravo_black_beret"
 	desc = "Black stylish beret with TGMC marine squad insignia. This one belongs to the Bravo Squad."
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/black/delta
 	name = "\improper Delta squad black beret"
 	icon_state = "delta_black_beret"
 	desc = "Black stylish beret with TGMC marine squad insignia. This one belongs to the Delta Squad."
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/tgmcberet/squad/black/charlie
 	name = "\improper Charlie squad black beret"
 	icon_state = "charlie_black_beret"
 	desc = "Black stylish beret with TGMC marine squad insignia. This one belongs to the Charlie Squad."
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/marine
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/sec/warden
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/sec
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/eng
 	item_icons = list(
 		slot_head_str = 'modular_RUtgmc/icons/mob/clothing/headwear/marine_hats.dmi')
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/marine/captain
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/marine/captain/black
 	icon_state = "black_captain"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/beret/marine/staff
 	name = "staff officer's beret"
 	desc = "A beret with the silver insignia emblazoned on it. Wearer may suffer being heavily misunderstood by marines."
 	icon = 'modular_RUtgmc/icons/obj/clothing/headwear/hats.dmi'
 	icon_state = "so_beret"
-	species_exception = list(/datum/species/robot)
 
 //Peaked caps
 /obj/item/clothing/head/highcap
@@ -249,17 +219,14 @@
 	name = "staff officer's peaked cap"
 	desc = "A somewhat fancy hat, typically worn by those who wish to conduct military operations."
 	icon_state = "so_alt"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/highcap/captain
 	name = "captain's peaked cap"
 	desc = "A somewhat fancy hat, typically worn by those who wish to have total control."
 	icon_state = "capitan_alt"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/highcap/captain/black
 	icon_state = "captain_alt_black"
-	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/slouch
 	icon_state = "slouch_hat"
@@ -268,37 +235,4 @@
 	species_exception = list(/datum/species/robot)
 
 /obj/item/clothing/head/headband
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/headband/red
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/headband/rambo
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/headband/snake
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/tan
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/red
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/red2
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/blueberet
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/darkgreen
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/green
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet/snow
-	species_exception = list(/datum/species/robot)
-
-/obj/item/clothing/head/tgmcberet
 	species_exception = list(/datum/species/robot)
