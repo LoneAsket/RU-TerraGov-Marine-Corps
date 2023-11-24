@@ -199,3 +199,6 @@
 #include "code\modules\requisitions\fulton.dm"
 #include "code\game\objects\structures\barricade.dm"
 #include "code\datums\keybinding\xeno.dm"
+#include "code\modules\clothing\head\jobs.dm"
+#include "code\modules\clothing\head\misc.dm"
+#include "code\modules\clothing\modular_armor\style_line.dm"
