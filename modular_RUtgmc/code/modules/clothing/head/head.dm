@@ -236,3 +236,48 @@
 
 /obj/item/clothing/head/headband
 	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/beanie
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/tgmccap
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/boonie
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/ornamented_cap
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/headset
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/cmo
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/ushanka
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/bearpelt
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/uppcap
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/frelancer
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/militia
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/admiral
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/commissar
+	species_exception = list(/datum/species/robot)
+
+/obj/item/clothing/head/strawhat
+	species_exception = list(/datum/species/robot)
+
+
+
