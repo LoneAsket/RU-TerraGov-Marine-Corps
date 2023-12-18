@@ -218,32 +218,32 @@
 	make_luminosity_update()
 
 
-//RU TGMC EDIT BEGIN
-///Changes the range which the light reaches. 0 means no light, 6 is the maximum value.
-// /datum/component/overlay_lighting/proc/set_range(atom/source, new_range)
-// 	SIGNAL_HANDLER
-// 	if(range == new_range)
-// 		return
-// 	if(range == 0)
-// 		turn_off()
-// 	range = clamp(CEILING(new_range, 0.5), 1, 6)
-// 	var/pixel_bounds = ((range - 1) * 64) + 32
-// 	lumcount_range = CEILING(range, 1)
-// 	if(current_holder && overlay_lighting_flags & LIGHTING_ON)
-// 		current_holder.underlays -= visible_mask
-// 	visible_mask.icon = light_overlays["[pixel_bounds]"]
-// 	if(pixel_bounds == 32)
-// 		visible_mask.transform = null
-// 		return
-// 	var/offset = (pixel_bounds - 32) * 0.5
-// 	var/matrix/transform = new
-// 	transform.Translate(-offset, -offset)
-// 	visible_mask.transform = transform
-// 	if(current_holder && overlay_lighting_flags & LIGHTING_ON)
-// 		current_holder.underlays += visible_mask
-// 	if(overlay_lighting_flags & LIGHTING_ON)
-// 		make_luminosity_update()
-//RU TGMC EDIT END
+	/* RUTGMC DELETION START
+/Changes the range which the light reaches. 0 means no light, 6 is the maximum value.
+/datum/component/overlay_lighting/proc/set_range(atom/source, new_range)
+	SIGNAL_HANDLER
+	if(range == new_range)
+		return
+	if(range == 0)
+		turn_off()
+	range = clamp(CEILING(new_range, 0.5), 1, 6)
+	var/pixel_bounds = ((range - 1) * 64) + 32
+	lumcount_range = CEILING(range, 1)
+	if(current_holder && overlay_lighting_flags & LIGHTING_ON)
+		current_holder.underlays -= visible_mask
+	visible_mask.icon = light_overlays["[pixel_bounds]"]
+	if(pixel_bounds == 32)
+		visible_mask.transform = null
+		return
+	var/offset = (pixel_bounds - 32) * 0.5
+	var/matrix/transform = new
+	transform.Translate(-offset, -offset)
+	visible_mask.transform = transform
+	if(current_holder && overlay_lighting_flags & LIGHTING_ON)
+		current_holder.underlays += visible_mask
+	if(overlay_lighting_flags & LIGHTING_ON)
+		make_luminosity_update()
+	RUTGMC DELETION END */
 
 ///Changes the intensity/brightness of the light by altering the visual object's alpha.
 /datum/component/overlay_lighting/proc/set_power(atom/source, new_power)
