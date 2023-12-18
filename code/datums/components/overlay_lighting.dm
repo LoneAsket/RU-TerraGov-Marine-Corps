@@ -29,22 +29,22 @@
 	///For light sources that can be turned on and off.
 	var/overlay_lighting_flags = NONE
 
-	//RU TGMC EDIT BEGIN
+	/* RUTGMC DELETION START
 	///Cache of the possible light overlays, according to size.
-	// var/static/list/light_overlays = list(
-	// 	"32" = 'icons/effects/light_overlays/light_32.dmi',
-	// 	"64" = 'icons/effects/light_overlays/light_64.dmi',
-	// 	"96" = 'icons/effects/light_overlays/light_96.dmi',
-	// 	"128" = 'icons/effects/light_overlays/light_128.dmi',
-	// 	"160" = 'icons/effects/light_overlays/light_160.dmi',
-	// 	"192" = 'icons/effects/light_overlays/light_192.dmi',
-	// 	"224" = 'icons/effects/light_overlays/light_224.dmi',
-	// 	"256" = 'icons/effects/light_overlays/light_256.dmi',
-	// 	"288" = 'icons/effects/light_overlays/light_288.dmi',
-	// 	"320" = 'icons/effects/light_overlays/light_320.dmi',
-	// 	"352" = 'icons/effects/light_overlays/light_352.dmi',
-	// 	)
-	//RU TGMC EDIT END
+	var/static/list/light_overlays = list(
+		"32" = 'icons/effects/light_overlays/light_32.dmi',
+		"64" = 'icons/effects/light_overlays/light_64.dmi',
+		"96" = 'icons/effects/light_overlays/light_96.dmi',
+		"128" = 'icons/effects/light_overlays/light_128.dmi',
+		"160" = 'icons/effects/light_overlays/light_160.dmi',
+		"192" = 'icons/effects/light_overlays/light_192.dmi',
+		"224" = 'icons/effects/light_overlays/light_224.dmi',
+		"256" = 'icons/effects/light_overlays/light_256.dmi',
+		"288" = 'icons/effects/light_overlays/light_288.dmi',
+		"320" = 'icons/effects/light_overlays/light_320.dmi',
+		"352" = 'icons/effects/light_overlays/light_352.dmi',
+		)
+	RUTGMC DELETION END */
 
 	///Overlay effect to cut into the darkness and provide light.
 	var/image/visible_mask
