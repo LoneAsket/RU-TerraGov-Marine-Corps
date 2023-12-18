@@ -219,7 +219,7 @@
 
 
 	/* RUTGMC DELETION START
-/Changes the range which the light reaches. 0 means no light, 6 is the maximum value.
+///Changes the range which the light reaches. 0 means no light, 6 is the maximum value.
 /datum/component/overlay_lighting/proc/set_range(atom/source, new_range)
 	SIGNAL_HANDLER
 	if(range == new_range)
