@@ -57,3 +57,5 @@
 		current_holder.underlays += visible_mask
 	if(overlay_lighting_flags & LIGHTING_ON)
 		make_luminosity_update()
+
+#undef LIGHTING_ON
