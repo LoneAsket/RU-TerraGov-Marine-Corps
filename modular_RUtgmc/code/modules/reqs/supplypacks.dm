@@ -343,7 +343,7 @@ MEDICAL
 	name = "Meraderm pills"
 	notes = "contains meralyne and dermaline pill bottle."
 	contains = list(
-		/obj/item/storage/pill_bottle/dermaline
-		/obj/item/storage/pill_bottle/meralyne
+		/obj/item/storage/pill_bottle/dermaline,
+		/obj/item/storage/pill_bottle/meralyne,
 	)
 	cost = 250
