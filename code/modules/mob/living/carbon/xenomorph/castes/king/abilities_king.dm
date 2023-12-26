@@ -99,7 +99,7 @@
 	addtimer(CALLBACK(src, PROC_REF(end_effects), humans), PETRIFY_DURATION)
 	add_cooldown()
 	succeed_activate()
-	 TGMC DELETE END */
+	TGMC DELETE END*/
 
 ///cleans up when the charge up is finished or interrupted
 /datum/action/ability/xeno_action/petrify/proc/finish_charging()
