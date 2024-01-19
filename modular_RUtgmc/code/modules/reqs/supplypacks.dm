@@ -247,7 +247,7 @@ MEDICAL
 	name = "Advanced Tweezers"
 	notes = "contains advanced tweezers."
 	contains = list(/obj/item/tweezers_advanced)
-	cost = 200
+	cost = 120
 	containertype = /obj/structure/closet/crate/secure/surgery
 	access = ACCESS_MARINE_MEDBAY
 
@@ -263,7 +263,7 @@ MEDICAL
 	name = "Health scanner gloves"
 	notes = "contains health scanner gloves."
 	contains = list(/obj/item/healthanalyzer/gloves)
-	cost = 100
+	cost = 60
 	containertype = /obj/structure/closet/crate/secure/surgery
 	access = ACCESS_MARINE_MEDBAY
 
@@ -327,7 +327,7 @@ MEDICAL
 	name = "Soldering tool"
 	notes = "contains 1 soldering tool for repair robots."
 	contains = list(/obj/item/tool/surgery/solderingtool)
-	cost = 120
+	cost = 30
 
 /datum/supply_packs/medical/nanoblood_hypo
 	name = "Nanoblood hypospray"
@@ -375,7 +375,7 @@ MEDICAL
 		/obj/item/reagent_containers/hypospray/autoinjector/fasygin,
 		/obj/item/reagent_containers/hypospray/autoinjector/fasygin,
 		)
-	cost = 1
+	cost = 20
 
 /datum/supply_packs/medical/imialky_kit
 	name = "ImiAlky kit"
@@ -410,7 +410,7 @@ MEDICAL
 		/obj/item/storage/pill_bottle/tricordrazine,
 		/obj/item/storage/pill_bottle/tramadol,
 		)
-	cost = 1
+	cost = 20
 
 /datum/supply_packs/medical/medicine_defibrillator
 	name = "Medical defibrillator"
