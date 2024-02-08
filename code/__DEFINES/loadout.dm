@@ -52,7 +52,8 @@ GLOBAL_LIST_INIT(marine_selector_cats, list(
 
 #define METAL_PRICE_IN_GEAR_VENDOR 2
 #define PLASTEEL_PRICE_IN_GEAR_VENDOR 4
-#define SANDBAG_PRICE_IN_GEAR_VENDOR 5
+//#define SANDBAG_PRICE_IN_GEAR_VENDOR 5 //ORIGINAL
+#define SANDBAG_PRICE_IN_GEAR_VENDOR 3 //RUTGMC EDIT
 
 GLOBAL_LIST_INIT(marine_gear_listed_products, list())
 
@@ -98,6 +99,7 @@ GLOBAL_LIST_INIT(engineer_gear_listed_products, list(
 	))
 */
 
+/* RUTGMC DELETION
 GLOBAL_LIST_INIT(medic_gear_listed_products, list(
 		/obj/effect/vendor_bundle/medic = list(CAT_ESS, "Essential Medic Set", 0, "white"),
 		/obj/item/storage/pill_bottle/meralyne = list(CAT_MEDSUP, "Meralyne pills", 16, "orange"),
@@ -123,13 +125,8 @@ GLOBAL_LIST_INIT(medic_gear_listed_products, list(
 		/obj/item/healthanalyzer/gloves = list(CAT_MEDSUP, "Health scanner gloves", 2, "black"),
 		/obj/item/defibrillator/gloves = list(CAT_MEDSUP, "Advanced medical gloves", 5, "black"),
 		/obj/effect/vendor_bundle/stretcher = list(CAT_MEDSUP, "Medivac Stretcher", 45, "black"),
-		//RUTGMC EDIT ADDITION  BEGIN - MEDICAL ITEMS
-		/obj/item/tool/surgery/solderingtool = list(CAT_MEDSUP, "Soldering tool", 2, "black"),
-		/obj/item/tweezers_advanced = list(CAT_MEDSUP, "Advanced Tweezers", 12, "black"),
-		/obj/item/stack/medical/heal_pack/advanced/bruise_pack/combat = list(CAT_MEDSUP, "Combat Trauma Kit", 3, "black"),
-		/obj/item/stack/medical/heal_pack/advanced/burn_pack/combat = list(CAT_MEDSUP, "Combat Burn Kit", 3, "black"),
-		//RUTGMC EDIT ADDITION  END
 	))
+*/
 
 /* GLOBAL_LIST_INIT(leader_gear_listed_products, list(
 		/obj/effect/vendor_bundle/leader = list(CAT_ESS, "Essential SL Set", 0, "white"),
@@ -180,6 +177,7 @@ GLOBAL_LIST_INIT(medic_gear_listed_products, list(
 		/obj/item/reagent_containers/hypospray/autoinjector/combat_advanced = list(CAT_FCSUP, "Injector (Advanced)", 15, "orange"),
 	)) */
 
+/* RUTGMC DELETION
 //A way to give them everything at once that still works with loadouts would be nice, but barring that make sure that your point calculation is set up so they don't get more than what they're supposed to
 GLOBAL_LIST_INIT(smartgunner_gear_listed_products, list(
 	/obj/item/clothing/glasses/night/m56_goggles = list(CAT_ESS, "KLTD Smart Goggles", 0, "white"),
@@ -199,14 +197,7 @@ GLOBAL_LIST_INIT(smartgunner_gear_listed_products, list(
 	/obj/item/ammo_magazine/rifle/standard_spottingrifle/flak = list(CAT_SGSUP, "SG-153 Spotting Rifle Flak Magazine", 2, "black"),
 	/obj/item/ammo_magazine/rifle/standard_spottingrifle/plasmaloss = list(CAT_SGSUP, "SG-153 Spotting Rifle Tanglefoot Magazine", 3, "black"),
 	/obj/item/ammo_magazine/rifle/standard_spottingrifle/incendiary = list(CAT_SGSUP, "SG-153 Spotting Rifle Incendiary Magazine", 3, "black"),
-	//RUTGMC EDIT ADDITION BEGIN
-	/obj/item/ammo_magazine/packet/sg62_rifle = list(CAT_SGSUP, "SG-62 smart target rifle ammo box", 5, "black"),
-	/obj/item/weapon/gun/rifle/T25 = list(CAT_SGSUP, "T-25 Smartrifle", 26, "orange"), //If smartganner buys a t25 , then they will have 2 mag and 3 ammo box
-	/obj/item/ammo_magazine/rifle/T25 =  list(CAT_SGSUP, "T-25 Smartrifle magazine", 2, "black"),
-	/obj/item/ammo_magazine/packet/T25_rifle = list(CAT_SGSUP, "T-25 Smartrifle ammo box", 5, "black"),
-	//RUTGMC EDIT ADDITION END
 	))
-
 
 ///Assoc list linking the job title with their specific points vendor
 GLOBAL_LIST_INIT(job_specific_points_vendor, list(
@@ -217,6 +208,7 @@ GLOBAL_LIST_INIT(job_specific_points_vendor, list(
 	FIELD_COMMANDER = GLOB.commander_gear_listed_products,
 	SQUAD_SMARTGUNNER = GLOB.smartgunner_gear_listed_products,
 ))
+*/
 
 
 //List of all visible and accessible slot on the loadout maker
@@ -261,6 +253,7 @@ GLOBAL_LIST_INIT(loadout_linked_vendor, list(
 		/obj/machinery/vending/marineFood/valhalla,
 		/obj/machinery/vending/MarineMed/valhalla,
 		/obj/machinery/vending/cigarette/valhalla,
+		/obj/machinery/vending/tool/nopower/valhalla, // RUTGMC ADDITION
 	),
 	SQUAD_CORPSMAN = list(
 		/obj/machinery/vending/medical/shipside,
@@ -496,6 +489,7 @@ GLOBAL_LIST_INIT(smartgunner_clothes_listed_products, list(
 		/obj/item/storage/belt/knifepouch = list(CAT_BEL, "Knives belt", 0, "black"),
 		/obj/item/storage/holster/belt/pistol/standard_pistol = list(CAT_BEL, "Pistol belt", 0, "orange"),
 		/obj/item/storage/holster/belt/revolver/standard_revolver = list(CAT_BEL, "Revolver belt", 0, "orange"),
+		/obj/item/storage/holster/belt/pistol/smart_pistol/full = list(CAT_BEL, "Smart pistol belt", 0, "orange"), // RUTGMC ADDITION
 		/obj/item/storage/belt/sparepouch = list(CAT_BEL, "G8 general utility pouch", 0, "orange"),
 		/obj/item/armor_module/module/welding = list(CAT_HEL, "Jaeger welding module", 0, "orange"),
 		/obj/item/armor_module/module/binoculars = list(CAT_HEL, "Jaeger binoculars module", 0, "orange"),

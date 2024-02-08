@@ -948,6 +948,7 @@
 	keybind_signal = COMSIG_XENOABILITY_JAB
 	hotkey_keys = list("E")
 
+/* RUTGMC DELETION, WIDOW DELETION
 /datum/keybinding/xeno/burrow
 	name = "burrow"
 	full_name = "Widow: Burrow"
@@ -1010,7 +1011,9 @@
 	description = "Signal your spawn to a target they shall attack."
 	keybind_signal = COMSIG_XENOABILITY_SPIDERLING_MARK
 	hotkey_keys = list("V")
+*/
 
+/* RU TGMC EDIT START
 /datum/keybinding/xeno/rewind
 	name = "rewind"
 	full_name = "Wraith: Time Shift"
@@ -1059,6 +1062,7 @@
 	description = "Freezes bullets in their course, and they will start to move again only after a certain time"
 	keybind_signal = COMSIG_XENOABILITY_TIMESTOP
 	hotkey_keys = list("V")
+RU TGMC EDIT END*/
 
 /datum/keybinding/xeno/flay
 	name = "Flay"
@@ -1114,11 +1118,13 @@
 	description = "Give blessings to your puppets."
 	keybind_signal = COMSIG_XENOABILITY_BESTOWBLESSINGS
 
+/* RUTGMC DELETION
 /datum/keybinding/xeno/behemoth_roll
 	name = "Roll"
 	full_name = "Behemoth: Roll"
 	description = "Curl up into a ball, sacrificing some offensive capabilities in exchange for greater movement speed."
 	keybind_signal = COMSIG_XENOABILITY_BEHEMOTH_ROLL
+*/
 
 /datum/keybinding/xeno/landslide
 	name = "Landslide"
