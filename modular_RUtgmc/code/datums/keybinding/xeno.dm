@@ -57,12 +57,6 @@
 	keybind_signal = COMSIG_XENOABILITY_PSYCHIC_GRAB
 	hotkey_keys = list("X")
 
-/datum/keybinding/xeno/heal_screech
-	name = "heal_screech"
-	full_name = "Queen: Heal Screech"
-	description = "Screech that heals nearby xenos."
-	keybind_signal = COMSIG_XENOABILITY_HEAL_SCREECH
-
 /datum/keybinding/xeno/plasma_screech
 	name = "plasma_screech"
 	full_name = "Queen: Plasma Screech"
@@ -80,24 +74,35 @@
 	full_name = "Chimera: Phantom"
 	description = "Create a physical clone and hide in shadows."
 	keybind_signal = COMSIG_XENOABILITY_CHIMERA_PHANTOM
+	hotkey_keys = list("R")
 
 /datum/keybinding/xeno/abduction
 	name = "abduction"
 	full_name = "Chimera: Abduction"
 	description = "Abduct the prey."
 	keybind_signal = COMSIG_XENOABILITY_CHIMERA_ABDUCTION
+	hotkey_keys = list("Q")
+
+/datum/keybinding/xeno/chimera_blink
+	name = "chimera_blink"
+	full_name = "Chimera: Blink"
+	description = "Teleport to a space a short distance away within line of sight. Can teleport mobs you're dragging with you at the cost of higher cooldown."
+	keybind_signal = COMSIG_XENOABILITY_CHIMERA_BLINK
+	hotkey_keys = list("E")
 
 /datum/keybinding/xeno/warp_blast
 	name = "warp_blast"
 	full_name = "Chimera: Warp Blast"
 	description = "Create a pure force explosion that damages and knockbacks targets around."
 	keybind_signal = COMSIG_XENOABILITY_CHIMERA_WARP_BLAST
+	hotkey_keys = list("F")
 
 /datum/keybinding/xeno/bodyswap
 	name = "bodyswap"
 	full_name = "Chimera: Bodyswap"
 	description = "Swap places with another alien."
 	keybind_signal = COMSIG_XENOABILITY_CHIMERA_BODYSWAP
+	hotkey_keys = list("X")
 
 /datum/keybinding/xeno/crippling_strike
 	name = "crippling_strike"
@@ -111,3 +116,40 @@
 	description = "Leap at your target and knock them down, if you jump close you will hug the target."
 	keybind_signal = COMSING_XENOABILITY_HUGGER_POUNCE
 	hotkey_keys = list("E")
+
+/datum/keybinding/xeno/roar
+	name = "Roar"
+	full_name = "Predalien: Roar"
+	description = "Give bonuses to teamates and deactivate hitech utilities."
+	keybind_signal = COMSIG_XENOABILITY_ROAR
+
+/datum/keybinding/xeno/smash
+	name = "Smash"
+	full_name = "Predalien: Smash"
+	description = "Stomp and stun your enemies."
+	keybind_signal = COMSIG_XENOABILITY_SMASH
+
+/datum/keybinding/xeno/devastate
+	name = "Devastate"
+	full_name = "Predalien: Devastate"
+	description = "Rip enemy gut."
+	keybind_signal = COMSIG_XENOABILITY_DEVASTATE
+
+/datum/keybinding/xeno/short_spray_acid
+	name = "short_spray_acid"
+	full_name = "Praetorian: Short Acid Spray"
+	description = "Sprays some acid"
+	keybind_signal = COMSIG_XENOABILITY_SHORT_SPRAY_ACID
+	hotkey_keys = list("E")
+
+/datum/keybinding/xeno/cresttoss
+	name = "cresttoss_away"
+	full_name = "Crusher: Crest Toss Away"
+	description = "Fling an adjacent target away from you."
+
+/datum/keybinding/xeno/cresttoss_behind
+	name = "cresttoss_behind"
+	full_name = "Crusher: Crest Toss Behind"
+	description = "Fling an adjacent target behind you."
+	keybind_signal = COMSIG_XENOABILITY_CRESTTOSS_BEHIND
+	hotkey_keys = list("R")

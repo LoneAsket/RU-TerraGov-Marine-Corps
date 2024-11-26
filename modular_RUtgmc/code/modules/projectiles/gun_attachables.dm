@@ -104,11 +104,15 @@
 	icon_state = "tes"
 
 /obj/item/attachable/bayonetknife
-	icon = 'modular_RUtgmc/icons/Marine/marine-weapons.dmi'
+	icon = 'modular_RUtgmc/icons/obj/items/weapons.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'modular_RUtgmc/icons/mob/inhands/weapons/melee_left.dmi',
 		slot_r_hand_str = 'modular_RUtgmc/icons/mob/inhands/weapons/melee_right.dmi',
 	)
+
+/obj/item/attachable/bayonetknife/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/shrapnel_removal, 12 SECONDS, 12 SECONDS, 10)
 
 /obj/item/attachable/melee_attack_chain(mob/user, atom/target, params, rightclick)
 	if(target == user && !user.do_self_harm)

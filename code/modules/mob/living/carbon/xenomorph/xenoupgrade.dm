@@ -70,6 +70,7 @@
 
 	hud_set_plasma()
 	med_hud_set_health()
+	hud_update_primo()
 
 	hud_set_queen_overwatch() //update the upgrade level insignia on our xeno hud.
 
@@ -345,6 +346,7 @@
 
 //----SHRIKE END----//
 //============//
+/* RU TGMC EDITION START
 //----WRAITH START----//
 
 /mob/living/carbon/xenomorph/wraith
@@ -352,18 +354,21 @@
 
 /mob/living/carbon/xenomorph/wraith/primordial
 	upgrade = XENO_UPGRADE_PRIMO
-	//upgrade_stored = TIER_TWO_THRESHOLD // RUTGMC DELETION
+	//upgrade_stored = TIER_TWO_THRESHOLD
 
 //----WRAITH END----//
 //============//
+RU TGMC EDITION END*/
 //----WIDOW START----//
+/* RUTGMC DELETION, WIDOW DELETION
 
 /mob/living/carbon/xenomorph/widow
 	upgrade = XENO_UPGRADE_NORMAL
 
 /mob/living/carbon/xenomorph/widow/primordial
 	upgrade = XENO_UPGRADE_PRIMO
-	//upgrade_stored = TIER_THREE_THRESHOLD
+	upgrade_stored = TIER_THREE_THRESHOLD
+*/
 
 //----WIDOW END----//
 //============//
@@ -377,14 +382,8 @@
 
 //----WARLOCK END----//
 //============//
-//----BANELING START----//
-/mob/living/carbon/xenomorph/baneling
-	upgrade = XENO_UPGRADE_NORMAL
-
-/mob/living/carbon/xenomorph/baneling/primordial
-	upgrade = XENO_UPGRADE_PRIMO
-//----BANELING END----//
 //============//
+/*RU TGMC EDIT
 //----PUPPETEER START----//
 /mob/living/carbon/xenomorph/puppeteer
 	upgrade = XENO_UPGRADE_NORMAL
@@ -394,6 +393,7 @@
 	//upgrade_stored = TIER_TWO_THRESHOLD // RUTGMC DELETION
 
 //----PUPPETEER END----//
+RU TGMC EDIT*/
 //============//
 //----BEHEMOTH START----//
 

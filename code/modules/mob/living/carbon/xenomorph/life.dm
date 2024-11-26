@@ -23,7 +23,10 @@
 			zoom_out()
 	else
 		if(is_zoomed)
-			if(loc != zoom_turf || lying_angle)
+			if(!can_walk_zoomed)
+				if(loc != zoom_turf)
+					zoom_out()
+			if(lying_angle)
 				zoom_out()
 		update_progression()
 		update_evolving()
@@ -31,6 +34,9 @@
 	handle_living_sunder_updates()
 	handle_living_health_updates()
 	handle_living_plasma_updates()
+//RUTGMC EDIT ADDITION BEGIN - Preds
+	handle_interference()
+//RUTGMC EDIT ADDITION END
 	update_action_button_icons()
 	update_icons(FALSE)
 

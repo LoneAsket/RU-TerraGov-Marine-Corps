@@ -194,7 +194,6 @@
 /obj/item/weapon/combat_knife/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/scalping)
-	AddElement(/datum/element/shrapnel_removal, 20 SECONDS)
 
 /obj/item/weapon/combat_knife/suicide_act(mob/user)
 	user.visible_message(pick(span_danger("[user] is slitting [user.p_their()] wrists with the [name]! It looks like [user.p_theyre()] trying to commit suicide."), \
@@ -340,9 +339,9 @@
 ///Throws a knife from the stack, or, if the stack is one, throws the stack.
 /obj/item/stack/throwing_knife/proc/throw_knife()
 	SIGNAL_HANDLER
-	if(living_user.get_active_held_item() != src)
+	if(living_user?.get_active_held_item() != src) // RUTGMC ADDITION, added "?"
 		return
-	if(living_user.Adjacent(current_target))
+	if(living_user?.Adjacent(current_target)) // RUTGMC ADDITION, added "?"
 		return AUTOFIRE_CONTINUE
 	var/thrown_thing = src
 	if(amount == 1)

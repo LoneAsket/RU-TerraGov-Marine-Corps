@@ -299,6 +299,10 @@
 	get_message_output("watchlist entry", ckey)
 	validate_key_in_db()
 
+//RUTGMC EDIT
+	load_player_predator_info()
+//RUTGMC EDIT
+
 	send_resources()
 
 	generate_clickcatcher()
@@ -353,7 +357,7 @@
 	if(!tooltips && prefs.tooltips)
 		tooltips = new /datum/tooltip(src)
 
-	view_size = new(src, get_screen_size(prefs.widescreenpref))
+	view_size = new(src, get_screen_size(prefs.widescreenpref, prefs.screen_resolution)) //RU TGMC EDIT
 	view_size.update_pixel_format()
 	view_size.update_zoom_mode()
 
@@ -393,7 +397,8 @@
 			message_staff("Mentor logout: [key_name(src)].")
 		holder.owner = null
 		GLOB.admins -= src
-		if (!length(GLOB.admins) && SSticker.IsRoundInProgress()) //Only report this stuff if we are currently playing.
+		//if (!length(GLOB.admins) && SSticker.IsRoundInProgress()) //Only report this stuff if we are currently playing. // ORIGINAL
+		if(!length(GLOB.admins) && SSticker.IsRoundInProgress() && CONFIG_GET(flag/tgs_adminless_messaging)) //RUTGMC ADDITION, TGS CONFIG FLAGS
 			var/cheesy_message = pick(
 				"I have no admins online!",\
 				"I'm all alone :(",\
@@ -877,14 +882,14 @@
 		CRASH("change_view called without argument.")
 	if(isnum(new_size))
 		CRASH("change_view called with a number argument. Use the string format instead.")
-
+/* RU TGMC EDIT
 	if(prefs && !prefs.widescreenpref && new_size == CONFIG_GET(string/default_view))
 		new_size = CONFIG_GET(string/default_view_square)
-
+RU TGMC EDIT */
 	view = new_size
 	apply_clickcatcher()
 	mob.reload_fullscreens()
-	if(prefs.auto_fit_viewport)
+	if(prefs.auto_fit_viewport && (isnull(view_size) || !view_size.is_zooming()))
 		INVOKE_NEXT_TICK(src, VERB_REF(fit_viewport), 1 SECONDS) //Delayed to avoid wingets from Login calls.
 
 ///Change the fullscreen setting of the client

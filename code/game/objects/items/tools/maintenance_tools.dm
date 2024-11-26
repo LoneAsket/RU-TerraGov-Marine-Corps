@@ -79,7 +79,7 @@
 
 /obj/item/tool/wirecutters/Initialize(mapload)
 	. = ..()
-	if(prob(50))
+	if(prob(50) && !istype(src, /obj/item/tool/wirecutters/yautja)) //RU TGMC EDIT
 		icon_state = "cutters-y"
 		item_state = "cutters_yellow"
 
@@ -248,7 +248,7 @@
 		return 0
 	return 1
 
-
+/* RUTGMC EDIT | MOVED TO MODULE
 //Toggles the welder off and on
 /obj/item/tool/weldingtool/proc/toggle(message = 0)
 	var/mob/M
@@ -291,6 +291,7 @@
 				M.update_inv_l_hand()
 		set_light(0)
 		STOP_PROCESSING(SSobj, src)
+*/
 
 /obj/item/tool/weldingtool/proc/flamethrower_screwdriver(obj/item/I, mob/user)
 	if(welding)
